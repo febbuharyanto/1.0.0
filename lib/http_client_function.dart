@@ -2,7 +2,7 @@ import 'package:dio/dio.dart' as dioclient;
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
-class DioFunction {
+class HttpClientFunction {
   String connectTimeout = 'Check your connection';
   String receiveTimeout = 'Unable to connect to the server';
   String otherErrorDio = 'Oops, Something went wrong';
