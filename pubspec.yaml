@@ -1,6 +1,6 @@
 name: simple_http_client
 description: A simple http client package with dio.
-version: 0.0.1
+version: 1.0.0
 author: Febu D. Haryanto
 homepage:
 
