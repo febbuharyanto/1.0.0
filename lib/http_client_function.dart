@@ -10,7 +10,7 @@ class HttpClientFunction {
   String sendTimeout = 'Send timeout in connection with API server';
   String socketException = 'Unexpected error occurred';
 
-  Future<dynamic> postDio(url, params, header) async {
+  Future<dynamic> post(url, params, header) async {
     try {
       dioclient.Dio dio = dioclient.Dio();
       dioclient.Response response;
@@ -30,7 +30,7 @@ class HttpClientFunction {
   }
 
   //DIO
-  Future<dynamic> postDioNoParam(url, header) async {
+  Future<dynamic> postWithoutParam(url, header) async {
     try {
       dioclient.Dio dio = dioclient.Dio();
       dioclient.Response response;
@@ -49,7 +49,7 @@ class HttpClientFunction {
     }
   }
 
-  Future<dynamic> getDio(url, header) async {
+  Future<dynamic> get(url, header) async {
     // baseController.isSuccess.value = false;
     try {
       dioclient.Dio dio = dioclient.Dio();
