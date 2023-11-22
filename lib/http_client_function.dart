@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart' as dioclient;
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:simple_http_client/loading_screen.dart';
 
 class HttpClientFunction {
   String connectTimeout = 'Check your connection';
@@ -67,6 +68,10 @@ class HttpClientFunction {
       errorMsg(e);
       return e.message.toString();
     }
+  }
+
+  void onComplete() {
+    LoadingScreen().hide();
   }
 
   errorMsg(e) async {
